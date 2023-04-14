@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:wght@700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Moonrocks&display=swap');
+
+.form-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+    background-image: url("https://wallpaper.dog/large/17066483.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.foto{
+    height: 150px;
+}
+.foto-header{
+    position: absolute;
+    left: 605px;
+    top: -45px;
+    height: 200px;
+    width: 400px;
+}
+p{
+    color: red;
+    text-align: center;
+    padding-top:5px ;
+}
+.form{
+    border-radius: 15px;
+    padding: 90px;
+    height: 550px;
+    width: 400px;
+    background: linear-gradient(to top,rgb(85, 63, 110), rgb(0, 0, 0));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.email{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+.password{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+label{
+    font-size: 22px;
+    font-family: 'PT Sans', sans-serif;
+    color: rgb(241, 241, 241);
+}
+input{
+    text-align: left;
+    padding: 20px;
+    border: 2px solid rgb(175, 247, 7);
+    border-radius: 5px;
+    width: 300px;
+    color: rgb(255, 255, 255);
+    background-color: rgba(0, 0, 0, 0.493);
+    font-size: 15px;
+    font-family: 'Josefin Sans', sans-serif;
+}
+.boton-form{
+    font-family: 'Rubik Moonrocks', cursive;
+    padding: 16px;
+    width: 140px;
+    font-size: 20px;
+    border: none;
+    border-radius: 3px;
+    color: rgb(124, 227, 245);
+    background-color: rgb(61, 81, 112);
+    cursor: pointer;
+    transition: all 0.3s;
+}
+.boton-form:hover{
+    background-color: rgb(68, 123, 133);
+    color: rgb(129, 230, 174) ;
+}

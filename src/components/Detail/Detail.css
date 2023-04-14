@@ -1,0 +1,22 @@
+.detail-container{
+    background-color: white;
+    width: auto;
+    display: flex;
+    justify-content: space-around;
+    width: 50%; 
+    height: 350px;
+    border-radius: 10px;
+}
+.property-container{
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 150px;
+}

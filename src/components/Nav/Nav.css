@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Lilita+One&display=swap');
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(14, 13, 13);
+}
+.foto-nav{
+    height: 100px;
+    margin: 10px;
+}
+.boton-nav{
+    width: 200px;
+    height: 50px;
+    border: none;
+    background-color: rgb(175, 192, 240);
+    cursor: pointer;
+}
+.link-navButtons{
+    color: white;
+    font-size: 15px;
+    font-family: 'Lilita One', cursive;
+    font-size: 20px;
+}
+.searchBar{
+    border: 2px solid white;
+    height: 20px;
+    width: 250px;
+    font-size: 25px;
+}
+.boton-search{
+    width: 70px;
+    height: 45px;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    color: rgb(235, 235, 235);
+    background-color: rgb(226, 78, 128);
+    font-family: 'Lilita One', cursive;
+    font-size: 15px;
+}
+.searchContainer{
+    display: flex;
+    justify-content: stretch;
+}
+.navSearch{
+    background-color: rgba(255, 255, 255, 0.452);
+}
