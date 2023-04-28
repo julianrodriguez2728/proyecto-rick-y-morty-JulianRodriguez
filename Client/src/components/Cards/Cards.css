@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Lilita+One&display=swap');
+.card-container{
+    background: linear-gradient(to top, rgb(218, 175, 238), rgb(65, 62, 107));
+    border-radius: 15px;
+    width: 100%;
+    max-width: 400px;
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.cards-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.img-card{
+    max-width: 60%;
+    border-radius: 5px;
+}
+h2{
+    color: rgb(169, 147, 199);
+    text-align: center;
+    transition: all 0.5s;
+}
+h2:hover{
+    color: transparent;
+    background: linear-gradient(to top, rgb(228, 71, 71), rgb(125, 98, 160));
+    -webkit-background-clip: text;
+}
+.title{
+    font-family: 'Lilita One', cursive;
+    font-size: 40px;
+    color: rgb(31, 31, 31);
+}
+.boton-x{
+    border: none;
+    background: none;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: 900;
+    color: white;
+    margin: 7px;
+    margin-right: 340px;
+    transition: all 0.2s;
+}
+.boton-x:hover{
+    font-size:25px;
+}
+.heart{
+    border: none;
+    background: none;
+    font-size: 30px;
+    cursor: pointer;
+    transition: all .5s;
+}
+.cabecera{
+    display: flex;
+    justify-content: space-between;
+}
