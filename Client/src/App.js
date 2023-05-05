@@ -13,6 +13,7 @@ import { Route, Routes, useLocation, useNavigate } from 'react-router-dom';
 // const URL_BASE = 'https://be-a-rym.up.railway.app/api/character';
 // const API_KEY = 'a45813b04fae.b0ec9381cd609b70a80f';
 
+const URL = 'http://localhost:3001/rickandmorty/login';
 
 function App() {
    
@@ -22,31 +23,35 @@ function App() {
    const [characters , setCharacters] = useState([]);
 
 
-   const login = (userData) => {
-      const { username, password } = userData;
-      const URL = 'http://localhost:3001/rickandmorty/login';
-      axios(URL + `?username=${username}&password=${password}`)
-      .then(({ data }) => {
+   const login = async (userData) => {
+      try {
+         const { username, password } = userData;
+         
+         const {data} = await axios(URL + `?username=${username}&password=${password}`)
          const { access } = data;
          setAccess(access);
-         access && navigate('/home');
-      });
+         access && navigate('/home');  
+
+      } catch (error) {
+         console.log(error.message)
+      }
    }
    
    useEffect(()=>{
       !access && navigate("/")
    },[access])
 
-   const onSearch =  (id) => {
-      axios(`http://localhost:3001/rickandmorty/character/${id}`)
-      .then(response => response.data)
-      .then(( data ) => {
-         if (data.name) {
+   const onSearch =  async (id) => {
+      try {
+         const {data}= await  axios(`http://localhost:3001/rickandmorty/character/${id}`)
+
+         if (data.name){
             setCharacters((oldChars) => [...oldChars, data]);
-         } else {
-            window.alert('¡No hay personajes con este ID!');
-         }
-      });
+         } 
+      } catch (error) {
+         
+         window.alert('¡No hay personajes con este ID!');
+      }
    }
    const onClose = (id)=>{
       const characterFilter = characters.filter((character)=>{
